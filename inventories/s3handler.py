@@ -23,7 +23,7 @@ def unwrap_sns(message_body: str) -> List[Dict[str, Any]]:
     raise ValueError("Message is not a valid SNS notification containing S3 events")
 
 
-def parse_sqs_message(message_body: str) -> List[Dict[str, Any]]:
+def parse_sqs(message_body: str) -> List[Dict[str, Any]]:
     """
     Parse the SQS recueved message.
 
