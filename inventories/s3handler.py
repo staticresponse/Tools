@@ -37,7 +37,7 @@ def parse_sqs_message(message_body: str) -> List[Dict[str, Any]]:
     Returns:
         A list of S3 event records
     Raises:
-        ValueError: If neither structure matches
+        ValueError: If both attempts fail
     """
     try:
         msg = json.loads(message_body)
