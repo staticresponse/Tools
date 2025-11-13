@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime
-from s3_inventory import S3Inventory
+from storageinfo import S3Inventory
 
 class TestS3Inventory(unittest.TestCase):
 
@@ -106,3 +106,4 @@ class TestS3Inventory(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
