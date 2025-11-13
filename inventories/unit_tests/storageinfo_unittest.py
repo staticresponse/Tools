@@ -37,7 +37,6 @@ class TestS3Inventory(unittest.TestCase):
         self.assertEqual(inv.storageinfo["file_depths"][0], {"depth": 0, "value": "1000000"})
         self.assertEqual(inv.storageinfo["file_depths"][1], {"depth": 1, "value": "GEODS00000"})
 
-        # Check date parsing
         self.assertIsInstance(inv.storageinfo["object_date"], datetime)
         self.assertEqual(inv.storageinfo["object_date"].isoformat(), "2025-11-12T12:34:56")
 
